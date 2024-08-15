@@ -1,0 +1,81 @@
+body {
+    background-image: url("ds_jungle_01.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color: #0b0702;
+    color:#d9bb90;
+    margin-top: 60px;
+    padding: 30px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header * {
+    display: inline;
+}
+
+header {
+    position:fixed;
+    background-color: #0b0702;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 25px rgb(17, 15, 11);
+    z-index: 100;
+    
+}
+
+main {
+    position:relative;
+    margin-top: 100px;
+}
+
+nav{
+    margin-right: 40px;
+}
+
+nav a {
+    font-size: 18px;
+    color: #d9bb90;
+    text-decoration: none;
+}
+
+h1#upgrade{
+    margin-right: 39%;
+}
+
+header  li {
+    margin: 20px;
+    
+}
+
+header h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: inline;
+}
+
+
+.logo {
+    border-radius: 100%;
+    margin-left: 50px;
+    border: 2px solid #d9bb90;
+}
+
+section#calculator {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    background-color: #1e0900;
+    border: 2px solid #d9bb90;
+    
+}
+
+section#calculator h3 {
+    padding-top: 0px;
+}
