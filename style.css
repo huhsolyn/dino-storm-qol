@@ -4,78 +4,85 @@ body {
     background-size:cover;
     background-color: #0b0702;
     color:#d9bb90;
-    margin-top: 60px;
-    padding: 30px;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
 }
 
-header * {
-    display: inline;
-}
-
-header {
-    position:fixed;
-    background-color: #0b0702;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 10px;
-    display:flex;
-    justify-content: space-between;
+.navbar {
+    background-color: #13100b;
+    height: 50px;
+    margin: 0;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 25px rgb(17, 15, 11);
-    z-index: 100;
-    
 }
 
-main {
-    position:relative;
-    margin-top: 100px;
+nav {
+    position: sticky;
+    top:0;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    z-index: 9999;
 }
 
-nav{
-    margin-right: 40px;
+.item{
+    margin: 4px 12px;
+    list-style: none;
 }
 
-nav a {
-    font-size: 18px;
-    color: #d9bb90;
-    text-decoration: none;
+.itemcenter{
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: auto;
 }
 
-h1#upgrade{
-    margin-right: 39%;
+.itemright{
+    list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-header  li {
-    margin: 20px;
-    
-}
-
-header h1 {
-    text-align: center;
-    margin: 0 auto;
-    display: inline;
-}
-
-
-.logo {
+.logo{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
-    margin-left: 50px;
     border: 2px solid #d9bb90;
+    margin-right: 30vw;
+    margin-left: 7vw;
+    float: left;
 }
 
-section#calculator {
-    display: block;
-    margin: 0 auto;
-    width: 500px;
+.item h1{
     text-align: center;
-    background-color: #1e0900;
-    border: 2px solid #d9bb90;
-    
 }
 
-section#calculator h3 {
-    padding-top: 0px;
+
+.navbuttons {
+    text-align: center;
+    margin-right: 5vw;
+    margin-left: auto;
+    float: right;
+    display: flex;
+}
+
+.item a{
+    text-decoration: none;
+    color: #d9bb90;
+    font-size: 18px;
+    padding: 8px;
+    font-weight: 200;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+.calculator {
+    text-align: center;
 }
