@@ -4,7 +4,7 @@
         <title>Upgrade Calculator</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="setLvlText()">
         <nav class ="nav">
             <ul class = "navbar">
                 <li class = "item">
@@ -24,10 +24,28 @@
             </ul>
         </nav>
     <main>
-       <section class="calculator">
-        
-            
+     <div class="box">
+       <section>
             <h3>Checklist</h3>
-       </section>
+            <hr style="border: 2px dashed;color: #d9bb90; border-bottom: none;">
+            <form>
+                <ul style="list-style: none; padding: 0;">
+                <li>
+                <p style="display: inline;">Level picker: </p><p id="levelValue" style="font-weight: bold; display: inline;">20</p>
+                </li>
+                <p style="font-size: 12px; color: #ad9f8b;"><i>(upgrade item list starts from lvl 20)</i></p>
+
+            <input id = "level" type="range" min="20" max="55" value="20" oninput="setLvlText()">
+            <br><input id = "submitLevel" type="button" value="Submit Level">
+            <script>
+                function setLvlText(){
+                    var inputLevel = level.value
+                    levelValue.innerText = inputLevel
+                }
+            </script>
+            </ul>
+            </form>
+        </section>
+    </div>
     </main>
     </body>

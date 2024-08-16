@@ -5,7 +5,7 @@ body {
     background-color: #0b0702;
     color:#d9bb90;
     font-family: Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0;
     margin: 0;
 }
@@ -38,6 +38,7 @@ nav {
     white-space: nowrap;
     overflow: hidden;
     margin-left: auto;
+    text-shadow: 0px 0px 7px #d9bb90;
 }
 
 .itemright{
@@ -52,9 +53,10 @@ nav {
     height: 50px;
     border-radius: 100%;
     border: 2px solid #d9bb90;
-    margin-right: 30vw;
-    margin-left: 7vw;
+    margin-right: 32vw;
+    margin-left: 4vw;
     float: left;
+    box-shadow: 0px 0px 20px #d9bb90;;
 }
 
 .item h1{
@@ -83,6 +85,63 @@ nav {
 
 
 
-.calculator {
+.box {
+    overflow-y:hidden; height: 400px;
+    border-radius: 0.5rem;
+    border: 2px solid #d9bb90;
     text-align: center;
+    position: fixed;
+    width: 500px;
+    right: 25%;
+    left: 50%;
+    margin-left: -250px;
+    bottom: -10px;
+    justify-content: space-between;
+    background-color: #13100b;
+    box-shadow: 0px 10px 30px #0b0702;
+}
+
+.box section {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.box2 {
+    overflow-y:hidden;
+    border-radius: 0.5rem;
+    border: 2px solid #d9bb90;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 700px;
+    justify-content: space-between;
+    background-color: #13100b;
+    box-shadow: 0px 10px 30px #0b0702;
+}
+
+
+input[type="range"]{
+    appearance: none;
+    background-color: #0b0702;
+    border: 1px solid #d9bb90;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 20rem;
+}
+
+input[type="button"]{
+    background-color: #0b0702;
+    color: #d9bb90;
+    border-color: #d9bb90;
+}
+
+input#submitLevel{
+    margin-bottom: 50px;
+    width: 20rem;
+    font-weight: bold;
+}
+
+p#levelValue{
+    margin-bottom: 0;
 }
